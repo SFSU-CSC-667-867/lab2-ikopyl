@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 
 const server = express();
-const PORT = process.env.port || 3001;
+const PORT = 3001;
 
 server.get('/world', (req, res) => {
     console.log(req.query);
