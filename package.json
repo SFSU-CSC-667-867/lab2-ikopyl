@@ -1,0 +1,22 @@
+{
+  "name": "lab2-ikopyl",
+  "version": "1.0.0",
+  "description": "Lab 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SFSU-CSC-667-867/lab2-ikopyl.git"
+  },
+  "author": "Ilya Kopyl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SFSU-CSC-667-867/lab2-ikopyl/issues"
+  },
+  "homepage": "https://github.com/SFSU-CSC-667-867/lab2-ikopyl#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
