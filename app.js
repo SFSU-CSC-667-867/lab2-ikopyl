@@ -7,7 +7,8 @@ server.get('/', (req, res) => {
 });
 
 server.get('/hello', (req, res) => {
-    res.send('<h1>world</h1>');
+    console.log(req.query);
+    res.send('<h1>Hello ' + req.query.name + '</h1>');
 });
 
 server.get('/add', (req, res) => {
