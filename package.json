@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SFSU-CSC-667-867/lab2-ikopyl#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.4"
   }
 }

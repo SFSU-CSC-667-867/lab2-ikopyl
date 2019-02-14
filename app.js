@@ -1,4 +1,6 @@
 const express = require('express');
+const axios = require('axios');
+
 const server = express();
 const PORT = process.env.port || 3000;
 
@@ -13,6 +15,16 @@ server.get('/hello', (req, res) => {
 
 server.get('/add', (req, res) => {
     res.send('<h1>0</h1>');
+});
+
+server.get('/network', (req, res) => {
+    axios.get('http://localhost:3001/world')
+    .then((networkResponse) => {
+        res.send(networkResponse.data);
+    })
+    .catch(() => {
+        res.send('sorry :( the request did not work');
+    });
 });
 
 server.listen(PORT, () => {
