@@ -6,6 +6,14 @@ server.get('/', (req, res) => {
     res.send('<h1>Welcome to the Ilya\'s server!</h1>');
 });
 
+server.get('/hello', (req, res) => {
+    res.send('<h1>world</h1>');
+});
+
+server.get('/add', (req, res) => {
+    res.send('<h1>0</h1>');
+});
+
 server.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}!`);
 });
